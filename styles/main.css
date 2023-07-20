@@ -1,0 +1,36 @@
+.body {
+  background-color: rgb(26, 145, 214);
+  background-image: url("https://res-1.cloudinary.com/jnto/image/upload/w_2064,h_1300,c_fill,f_auto,fl_lossy,q_auto/v1648108505/okinawa/H_00376_001");
+}
+
+.title {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border-style: inset;
+  color: chocolate;
+  padding: 4.5%;
+  font-size: xx-large;
+}
+
+.fishList {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.fish_card {
+  margin: 3%;
+  color: aliceblue;
+  font-family: cursive;
+}
+
+.fish__image {
+  width: 30%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.fish__name {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font: bold;
+  text-decoration: underline;
+  font-size: x-large;
+}
