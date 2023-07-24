@@ -64,8 +64,55 @@ const database = {
       food: "Small fish and mollusks",
     },
   ],
+  tipList: [
+    {
+      concept: "Cleaning the Tank",
+      description:
+        "You'll want to clean the tank at least once every 2 weeks to prevent any bacterial build up.",
+    },
+    {
+      concept: "Temperature",
+      description:
+        "The tank must be at the temperature right for your fish. To do that, you will need _______",
+    },
+    {
+      concept: "Salinity",
+      description:
+        "You need to ask your self the important question, is my fish a fresh water or salt water fish? Go from there, dude.",
+    },
+  ],
+  Locations: [
+    {
+      id: 1,
+      place: "Florida",
+    },
+    {
+      id: 2,
+      place: "Texas",
+    },
+    {
+      id: 3,
+      place: "Las Vegas",
+    },
+    {
+      id: 4,
+      place: "New Orleans",
+    },
+    {
+      id: 5,
+      place: "New York",
+    },
+  ],
 };
 
 export const getFish = () => {
   return database.fish.map((fish) => ({ ...fish }));
+};
+
+export const tipList = () => {
+  return database.tipList.map((tipList) => ({ ...tipList }));
+};
+
+export const locList = () => {
+  return database.Locations.map((Locations) => ({ ...Locations }));
 };

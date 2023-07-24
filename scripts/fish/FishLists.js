@@ -23,7 +23,7 @@ const soldierFish = () => {
   let soldiers = [];
 
   for (const fish of fishes) {
-    if (fish.length % 5 === 0) {
+    if (fish.length % 5 === 0 && fish.length % 3 != 0) {
       soldiers.push(fish);
     }
   }
@@ -44,13 +44,12 @@ const nonHolyFish = () => {
   }
   return regularFish;
 };
-//! this is where the error is occuring //
-// newFishOrder = [];
 
-// newFishOrder.push(mostHolyFish());
-// newFishOrder.push(soldierFish());
-// newFishOrder.push(nonHolyFish());
-//! when I push into this array, it is creating separate arrays instead of just objects//
+const holyFish = mostHolyFish();
+const soldier = soldierFish();
+const nonHoly = nonHolyFish();
+
+const newFishOrder = [...holyFish, ...soldier, ...nonHoly];
 
 export const FishList = () => {
   // Invoke the function that you imported from the database module
