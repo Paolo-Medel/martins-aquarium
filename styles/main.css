@@ -3,6 +3,11 @@
   background-image: url("https://res-1.cloudinary.com/jnto/image/upload/w_2064,h_1300,c_fill,f_auto,fl_lossy,q_auto/v1648108505/okinawa/H_00376_001");
 }
 
+.main-aside {
+  display: flex;
+  align-content: center;
+}
+
 .title {
   text-align: center;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -14,7 +19,8 @@
 
 .fishList {
   display: flex;
-  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 .fish_card {
   margin: 3%;
@@ -33,4 +39,29 @@
   font: bold;
   text-decoration: underline;
   font-size: x-large;
+}
+
+.tip_card {
+  color: aliceblue;
+  padding: 20%;
+  font-size: x-large;
+  border: solid;
+}
+
+.loc_card {
+  color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5%;
+  font-size: x-large;
+}
+
+.loc_id {
+}
+
+.loc_Place {
+  padding-left: 1%;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font: bold;
 }
